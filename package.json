@@ -5,6 +5,7 @@
   "author": "lemon5920 <lemon5920@gmail.com>",
   "private": true,
   "dependencies": {
+    "axios": "^0.16.2",
     "nuxt": "latest"
   },
   "scripts": {

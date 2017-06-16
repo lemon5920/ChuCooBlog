@@ -21,6 +21,13 @@ module.exports = {
   ** Customize the progress-bar color
   */
   loading: { color: '#3B8070' },
+
+  /*
+  ** Middleware
+  */
+  router: {
+    middleware: 'user-agent'
+  },
   /*
   ** Build configuration
   */
