@@ -21,6 +21,10 @@ module.exports = {
   */
   loading: { color: '#3B8070' },
   /*
+  ** Plugins
+  */
+  plugins: ['~plugins/vue-notifications'],
+  /*
   ** Build configuration
   */
   build: {

@@ -9,7 +9,9 @@
     "@nuxtjs/bulma": "^1.0.1",
     "@nuxtjs/font-awesome": "^1.0.1",
     "@nuxtjs/proxy": "^1.1.1",
-    "nuxt": "latest"
+    "mini-toastr": "^0.6.5",
+    "nuxt": "latest",
+    "vue-notifications": "^0.8.0"
   },
   "scripts": {
     "dev": "nuxt",
