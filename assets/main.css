@@ -4,3 +4,7 @@
 .layout-enter, .layout-leave-to {
   opacity: 0;
 }
+
+.articleList {
+  padding-top: 20px;
+}

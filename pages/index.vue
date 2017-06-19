@@ -51,10 +51,6 @@ export default {
 </script>
 
 <style>
-.articleList {
-  padding-top: 20px;
-}
-
 .author-name {
   font-size: 15px;
   font-style: italic;
