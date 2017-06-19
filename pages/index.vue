@@ -11,6 +11,32 @@
           </h2>
         </div>
       </div>
+      <div class="hero-footer">
+        <div class="container">
+          <div class="tabs is-boxed">
+            <ul>
+              <li class="is-active">
+                <a>
+                  <span class="icon is-small"><i class="fa fa-list-alt"></i></span>
+                  <span>List</span>
+                </a>
+              </li>
+              <li>
+                <a>
+                  <span class="icon is-small"><i class="fa fa-plus"></i></span>
+                  <span>Add</span>
+                </a>
+              </li>
+              <li>
+                <a>
+                  <span class="icon is-small"><i class="fa fa-user-circle"></i></span>
+                  <span>User</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </section>
 
     <div class="container articleList">
