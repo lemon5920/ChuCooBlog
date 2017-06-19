@@ -1,14 +1,6 @@
-.slide-container {
-  transition: all .5s cubic-bezier(.55,0,.1,1);
+.layout-enter-active, .layout-leave-to {
+  transition: opacity .5s;
 }
-
-.slide-left-enter,
-.slide-right-leave-active {
+.layout-enter, .layout-leave-to {
   opacity: 0;
-  transform: translate(30px, 0);
-}
-.slide-left-leave-active,
-.slide-right-enter {
-  opacity: 0;
-  transform: translate(-30px, 0);
 }

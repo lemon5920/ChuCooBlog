@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <transition name="layout" mode="out-in">
     <nuxt/>
-  </div>
+  </transition>
 </template>

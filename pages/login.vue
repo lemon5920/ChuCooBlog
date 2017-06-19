@@ -19,6 +19,7 @@
         </span>
       </p>
     </div>
+
     <div class="field">
       <p class="control">
         <button class="button is-success login-button" @click="login()">
@@ -26,6 +27,9 @@
         </button>
         <button class="button is-success login-button" @click="status()">
           status
+        </button>
+        <button class="button login-button" @click="skip()">
+          skip
         </button>
       </p>
     </div>
@@ -40,6 +44,7 @@ export default {
     if (!from) return 'slide-left'
     return +to.query.page < +from.query.page ? 'slide-right' : 'slide-left'
   },
+
   data () {
     return {
       loginData: {
@@ -48,6 +53,7 @@ export default {
       }
     }
   },
+
   methods: {
     login () {
       this.$post('/api/login', this.loginData)
@@ -69,8 +75,13 @@ export default {
       this.$get('/api/authors').then((response) => {
         console.log(response)
       })
+    },
+
+    skip () {
+      this.$router.replace({ path: '/' })
     }
   },
+
   notifications: {
     showLoginError: {
       title: '登入失敗',
