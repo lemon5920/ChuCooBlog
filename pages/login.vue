@@ -48,9 +48,7 @@ export default {
       this.$post('/api/login', this.loginData)
       .then((response) => {
         this.showLoginSuccess()
-        setTimeout(() => {
-          window.location.href = '/'
-        }, 1000)
+        this.$router.replace({ path: '/' })
       })
       .catch((error) => {
         if (error.response.status === 401) {
@@ -76,7 +74,7 @@ export default {
     },
     showLoginSuccess: {
       title: '登入成功',
-      message: '跳轉頁面中',
+      message: '',
       type: 'success'
     }
   }
