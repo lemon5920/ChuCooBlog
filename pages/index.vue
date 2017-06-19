@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="slide-container">
     <section class="hero is-primary">
       <div class="hero-body">
         <div class="container">
@@ -39,6 +39,10 @@
 
 <script>
 export default {
+  transition (to, from) {
+    if (!from) return 'slide-left'
+    return +to.query.page < +from.query.page ? 'slide-right' : 'slide-left'
+  },
   data () {
     return {
       list: ''

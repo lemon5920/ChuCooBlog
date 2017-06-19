@@ -1,5 +1,5 @@
 <template>
-<div class="login-container">
+<div class="login-container slide-container">
   <div class="login-content">
     <h1 class="title is-2 has-text-centered">Login</h1>
     <div class="field">
@@ -10,6 +10,7 @@
         </span>
       </p>
     </div>
+
     <div class="field">
       <p class="control has-icons-left">
         <input class="input" type="password" placeholder="Password" v-model="loginData.password" @keyup.enter="login()">
@@ -35,6 +36,10 @@
 <script>
 
 export default {
+  transition (to, from) {
+    if (!from) return 'slide-left'
+    return +to.query.page < +from.query.page ? 'slide-right' : 'slide-left'
+  },
   data () {
     return {
       loginData: {

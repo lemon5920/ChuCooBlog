@@ -16,10 +16,11 @@ module.exports = {
       { src: 'https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js' }
     ]
   },
+  css: ['assets/main.css'],
   /*
   ** Customize the progress-bar color
   */
-  loading: { color: '#3B8070' },
+  loading: false,
   /*
   ** Plugins
   */
