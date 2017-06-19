@@ -1,14 +1,9 @@
-import Vuex from 'vuex'
+export const state = () => ({
+  currentPage: ''
+})
 
-import mutations from './mutations'
-
-const firstStore = () => {
-  return new Vuex.Store({
-    state: {
-      currentPage: ''
-    },
-    mutations
-  })
+export const mutations = {
+  changePage (state, pageName) {
+    state.currentPage = pageName
+  }
 }
-
-export default firstStore
